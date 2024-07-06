@@ -1,6 +1,18 @@
 (function ($) {
     "use strict";
 
+    function validateForm(){
+        var selectElement = document.getElementById("name");
+        var selectedValue = selectElement.value;
+        
+        if (selectedValue === "default") {
+            alert("Please select your name.");
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission
+    }
+
+    
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
