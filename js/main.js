@@ -21,7 +21,7 @@
             const data = Object.fromEntries(formData.entries());
 
             // Send data to Google Apps Script web app
-            fetch('AKfycbwrGNDra-lnKswUa1GcaqsaqDKZBjq2x6dQdjPlC_s', {
+            fetch('https://script.google.com/macros/s/AKfycbyOpvThPiIAHlM1zSQouCZx8W0SF0x1X58FJQBhanuLXBqHq-xYXAChYhjY3dUkTUJO/exec', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
