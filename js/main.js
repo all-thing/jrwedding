@@ -12,38 +12,6 @@
         return true; // Allow form submission
     }
 
-    const form = document.getElementById('rsvp-form');
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-
-            // Collect form data
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-
-            // Send data to Google Apps Script web app
-            fetch('https://script.google.com/macros/s/AKfycbyOpvThPiIAHlM1zSQouCZx8W0SF0x1X58FJQBhanuLXBqHq-xYXAChYhjY3dUkTUJO/exec', {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.result === 'success') {
-                    alert('RSVP Submitted Successfully!');
-                } else {
-                    alert('There was an error. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error. Please try again.');
-            });
-        });
-
-    
-
     
     // Navbar on scrolling
     $(window).scroll(function () {
@@ -156,9 +124,5 @@
             }
         }
     });
-
-
-    
     
 })(jQuery);
-
