@@ -9826,10 +9826,10 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc; /* Border around each color item */
+    /*border: 1px solid #ccc; /* Border around each color item */*/
     background-color: #f0f0f0; /* Light background color */
     color: #333; /* Text color */
     font-size: 20px;
     font-weight: bold;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 25px; /* Optional: rounded corners */
 }
