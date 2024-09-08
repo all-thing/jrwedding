@@ -27,15 +27,17 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
 
-    <audio src="audio/PALAGI.mp3" id="my_audio" loop="loop" muted></audio>
+    <audio src="audio/PALAGI.mp3" id="my_audio" loop="loop"></audio>
     <script type="text/javascript">
         window.addEventListener('click', function() {
             var audio = document.getElementById('my_audio');
             audio.muted = false;  // Unmute the audio
             audio.play();         // Start playing the audio
 
-            //var audioPromptText = document.getElementById('audioPlayPrompt');
-            //audioPromptText.remove();
+            console.log("audio now playing")
+
+            var audioPromptText = document.getElementById('audioPlayPrompt');
+            audioPromptText.remove();
         });
     </script>
 
