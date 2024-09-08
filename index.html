@@ -27,7 +27,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
 
-    <audio src="PALAGI.mp3" id="my_audio" loop="loop"></audio>
+    <audio src="PALAGI.mp3" id="my_audio" loop="loop" muted></audio>
     <script type="text/javascript">
         window.addEventListener('click', function() {
             var audio = document.getElementById('my_audio');
@@ -609,14 +609,7 @@
             document.getElementById("countdown2").innerHTML = "";
             document.getElementById("countdown3").innerHTML = "";
           }
-        }, 1000);
-    </script>
-    <audio id="my_audio" src="audio/PALAGI.mp3" loop="loop"></audio>
-    <script>
-        window.onload = function() {
-            document.getElementById("my_audio").play();
-        }
-    </script>    
+        }, 1000); 
 </body>
 
 </html>
