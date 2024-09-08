@@ -36,7 +36,15 @@
 
             console.log("audio now playing")
 
-            var audioPromptText = document.getElementById('audioPlayPrompt');
+            var audioPromptText1 = document.getElementById('audioPlayPrompt');
+            audioPromptText.remove();
+            audioPromptText = null;
+
+            var audioPromptText2 = document.getElementById('audioPlayPrompt');
+            audioPromptText.remove();
+            audioPromptText = null;
+
+            var audioPromptText3 = document.getElementById('audioPlayPrompt');
             audioPromptText.remove();
             audioPromptText = null;
         });
@@ -85,7 +93,7 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <p id="countdown1" class="mt-md-4"></p>
-                            <p id="audioPlayPrompt" class="mt-md-4">click or tap anywhere to play our theme song</p>
+                            <p id="audioPlayPrompt1" class="mt-md-4">click or tap anywhere to play our theme song</p>
                         </div>
                     </div>
                 </div>
@@ -98,6 +106,7 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <p id="countdown2" class="mt-md-4"></p>
+                            <p id="audioPlayPrompt2" class="mt-md-4">click or tap anywhere to play our theme song</p>
                         </div>
                     </div>
                 </div>
@@ -110,6 +119,7 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <p id="countdown3" class="mt-md-4"></p>
+                            <p id="audioPlayPrompt3" class="mt-md-4">click or tap anywhere to play our theme song</p>
                         </div>
                     </div>
                 </div>
