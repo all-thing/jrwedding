@@ -25,9 +25,8 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-
-    <audio src="PALAGI.mp3" id="my_audio" loop="loop"></audio>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">    
+    <!--
     <script type="text/javascript">
         window.addEventListener('click', function() {
             var audio = document.getElementById('my_audio');
@@ -36,19 +35,20 @@
 
             console.log("audio now playing")
 
-            var audioPromptText1 = document.getElementById('audioPlayPrompt1');
+            var audioPromptText1 = document.getElementById('audioPlaytButton1');
             audioPromptText1.remove();
             audioPromptText1 = null;
 
-            var audioPromptText2 = document.getElementById('audioPlayPrompt2');
+            var audioPromptText2 = document.getElementById('audioPlaytButton2');
             audioPromptText2.remove();
             audioPromptText2 = null;
 
-            var audioPromptText3 = document.getElementById('audioPlayPrompt3');
+            var audioPromptText3 = document.getElementById('audioPlaytButton3');
             audioPromptText3.remove();
             audioPromptText3 = null;
         });
     </script>
+    -->
 
     
     <!-- Navbar Start -->
@@ -93,7 +93,6 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <p id="countdown1" class="mt-md-4"></p>
-                            <p id="audioPlayPrompt1" class="mt-md-4">click or tap anywhere to play our theme song</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +105,6 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <p id="countdown2" class="mt-md-4"></p>
-                            <p id="audioPlayPrompt2" class="mt-md-4">click or tap anywhere to play our theme song</p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +117,6 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <p id="countdown3" class="mt-md-4"></p>
-                            <p id="audioPlayPrompt3" class="mt-md-4">click or tap anywhere to play our theme song</p>
                         </div>
                     </div>
                 </div>
@@ -137,6 +134,11 @@
         </div>
     </div>
     <!-- Carousel End -->
+
+    <div class="container-fluid py-5" id="about">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Our theme song</h6>
+        <audio controls loop src="PALAGI.mp3" id="my_audio" loop="loop"></audio>
+    </div>
 
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
