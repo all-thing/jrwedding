@@ -140,7 +140,9 @@
             <div class="container py-5">
                 <div class="section-title position-relative text-center">
                     <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Our theme song</h6>
-                    <audio controls loop src="PALAGI.mp3" id="my_audio" loop="loop"></audio>
+                    <audio controls loop id="my_audio" loop="loop">
+                        <source src="PALAGI.mp3">
+                    </audio>
                 </div>
             </div>                    
         </div>
@@ -444,17 +446,6 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
                     <h4 class="mb-1 text-primary">Details</h4>                    
-                    <!--
-                    <ol id="timeline" class="mb-12 text-primary">
-                      <li class="timelineli"><span><p class="text-primary">Ceremony</p></span></li>
-                      <li class="timelineli"><span><p class="text-primary">Photos</p></span></li>
-                      <li class="timelineli"><span><p class="text-primary">Snacks</p></span></li>
-                      <li class="timelineli"><span><p class="text-primary">Reception</p></span></li>
-                      <li class="timelineli"><span><p class="text-primary">Dinner</p></span></li>
-                      <li class="timelineli"><span><p class="text-primary">Party</p></span></li>
-                    </ol>
-                    <p class="mb-12 text-primary"></p>
-                    -->
                     <p class="text-primary">Ceremony <i class="fas fa-long-arrow-alt-right text-primary"></i> Photos <i class="fas fa-long-arrow-alt-right text-primary"></i> Snacks <i class="fas fa-long-arrow-alt-right text-primary"></i> Reception <i class="fas fa-long-arrow-alt-right text-primary"></i> Dinner <i class="fas fa-long-arrow-alt-right text-primary"></i> Party</p>
                 </div>
             </div>
@@ -519,34 +510,167 @@
                                     <h6 class="text-left text-primary">Name</h6>
                                     <select required name="name" class="form-control bg-secondary border border-primary" style="height: 52px;">
                                         <option value="" >Select your name</option>
-                                        <option>Anderson, Daniel K.</option>
-                                        <option>Brown, David E.</option>
-                                        <option>Davis, Laura F.</option>
-                                        <option>Garcia, Sophia R.</option>
-                                        <option>Green, Abigail D.</option>
-                                        <option>Harris, Christopher O.</option>
-                                        <option>Hill, Ella B.</option>
-                                        <option>Jackson, Brian M.</option>
-                                        <option>Johnson, Emily A.</option>
-                                        <option>Jones, Sarah C.</option>
-                                        <option>King, Samuel Y.</option>
-                                        <option>Lopez, Lucas A.</option>
-                                        <option>Martin, Natalie P.</option>
-                                        <option>Martinez, Joshua S.</option>
-                                        <option>Miller, James G.</option>
-                                        <option>Moore, Robert I.</option>
-                                        <option>Roberts, Lily T.</option>
-                                        <option>Scott, Aiden C.</option>
-                                        <option>Smith, John D.</option>
-                                        <option>Taylor, Amanda J.</option>
-                                        <option>Thompson, Kevin Q.</option>
-                                        <option>White, Megan N.</option>
-                                        <option>Williams, Michael B.</option>
-                                        <option>Wilson, Jessica H.</option>
-                                        <option>Wright, Mia Z.</option>
-                                        <option>Young, William W.</option>
-                                        <option>Zelen, Isabella X.</option>
-                                        <option>Zebra, Chloe V.</option>
+                                        <option>Adriano, Menandro</option>
+                    					<option>Albano, Evelyn</option>
+                    					<option>Albano, Leo</option>
+                    					<option>Alfafara, Merly</option>
+                    					<option>Alfafara, Nimarlo</option>
+                    					<option>Alvances, Jonathan</option>
+                    					<option>Amen, Joshua</option>
+                    					<option>Andutan, Mary Joy</option>
+                    					<option>April Flora</option>
+                    					<option>Arceo, Jackie Rose V.</option>
+                    					<option>Avilla, Ruel</option>
+                    					<option>Balestramon, Glory May</option>
+                    					<option>Balongoy, Aljun G.</option>
+                    					<option>Bautista, Denzyl</option>
+                    					<option>Belaguin, Eldie B.</option>
+                    					<option>Bergström, Roland</option>
+                    					<option>Blasco, Angel</option>
+                    					<option>Blasco, Bryan</option>
+                    					<option>Bonilla, Jean</option>
+                    					<option>Buluran, Jean May</option>
+                    					<option>Cabrito, Marvin</option>
+                    					<option>Camacho, Drexel</option>
+                    					<option>Camacho, Vic Marie</option>
+                    					<option>Caponpon, Amanda</option>
+                    					<option>Cheng, Celestine</option>
+                    					<option>Cheng, Ted Stephen</option>
+                    					<option>Chua, Jornaliza</option>
+                    					<option>Claudine Alyssa</option>
+                    					<option>Co, Jhemelie P. </option>
+                    					<option>Co, Lawrence</option>
+                    					<option>Coldayon, Anita</option>
+                    					<option>Coldayon, Irene</option>
+                    					<option>Coldayon, Joemari</option>
+                    					<option>Coldayon, John Paul</option>
+                    					<option>Coldayon, Liza</option>
+                    					<option>Coldayon, Roberto</option>
+                    					<option>Coldayon, Rudolfo Jr.</option>
+                    					<option>Coldayon, Russel</option>
+                    					<option>Coldayon, Silverio</option>
+                    					<option>Coldayon, Tessie</option>
+                    					<option>Cortez, Jiessa</option>
+                    					<option>Cruz, Claire Aussie</option>
+                    					<option>Cruz, Joseph Gabriel</option>
+                    					<option>Cuetara, Abigail</option>
+                    					<option>Cura, Arnold</option>
+                    					<option>Cura, Elvie</option>
+                    					<option>David, Allen Bryan </option>
+                    					<option>David, Anna Camille</option>
+                    					<option>David, Clinton T.</option>
+                    					<option>David, Edelina D.</option>
+                    					<option>David, Ederma L. </option>
+                    					<option>David, Ellaine D.</option>
+                    					<option>David, Federico T.</option>
+                    					<option>David, Jazel Ann L.</option>
+                    					<option>David, Joan Angelica L.</option>
+                    					<option>David, Jose Ryan L. </option>
+                    					<option>David, Justin L.</option>
+                    					<option>David, Remedios T.</option>
+                    					<option>De Jesus, Jelyn</option>
+                    					<option>Del Rosario, Pearly</option>
+                    					<option>Del Rosario, Pinky</option>
+                    					<option>Del Rosario, Ronalyn</option>
+                    					<option>Dela Cruz, Cathy</option>
+                    					<option>Dela Cruz, Cipriano</option>
+                    					<option>Dela Cruz, Kathleen</option>
+                    					<option>Dela Cruz, Milagros</option>
+                    					<option>Delos Santos, Alwin</option>
+                    					<option>Demafelis, Sarah</option>
+                    					<option>Diolazo, Josephine</option>
+                    					<option>Español, Mamerto "M2" </option>
+                    					<option>Español, Nicasia E.</option>
+                    					<option>Espina, Andre</option>
+                    					<option>Espiritu, Charissa Minerva</option>
+                    					<option>Felicia, Daphne</option>
+                    					<option>Felicia, Victor, REV</option>
+                    					<option>Flores, Rachel</option>
+                    					<option>Gajo, Aaron Adrianne J.</option>
+                    					<option>Garcia, Nelson</option>
+                    					<option>Gelido, Jessa Mae</option>
+                    					<option>Gelido, J-R B.</option>
+                    					<option>Geronimo, Susan</option>
+                    					<option>Guino-o, Gavrielyn</option>
+                    					<option>Ibuyan, Judy</option>
+                    					<option>Ibuyan, Julius Benedict</option>
+                    					<option>Igot, Ian Brian</option>
+                    					<option>Jose, Crystal L. </option>
+                    					<option>Jose, Renie</option>
+                    					<option>Juat, Alma M. </option>
+                    					<option>Juat, Eliezer</option>
+                    					<option>Langcauon, Philippe Prean</option>
+                    					<option>Laurino Jr., Arnaldo S. </option>
+                    					<option>Lee, Aillen B.</option>
+                    					<option>Lee, John Paulo</option>
+                    					<option>Lopez, Erlinda</option>
+                    					<option>Lorenzana, Angela R.</option>
+                    					<option>Luces, Mary Ann</option>
+                    					<option>Lupango, Ma. Elisa</option>
+                    					<option>Lupango, Mercy</option>
+                    					<option>Lupango, Reymund</option>
+                    					<option>Lupango, Ronnel Mark C.</option>
+                    					<option>Lupango, Ronnie</option>
+                    					<option>Mañago, Arlene D.</option>
+                    					<option>Mañago, Carla D.</option>
+                    					<option>Mañago, Oscar D.</option>
+                    					<option>Mari, Miracle Gatchalian</option>
+                    					<option>Mari, Nathaniel B.</option>
+                    					<option>Mariano, Rio Grace</option>
+                    					<option>Martin, Ian Ezekiel</option>
+                    					<option>Matel, Liberty</option>
+                    					<option>Mateo, Riza Lea S.</option>
+                    					<option>Mediavillo, Jessica</option>
+                    					<option>Mendoza, Grace</option>
+                    					<option>Mendoza, Nathaniel</option>
+                    					<option>Mercado,  Mikaela Michelle</option>
+                    					<option>Miralpes, Gilbert O.</option>
+                    					<option>Miras, Justin Ralph</option>
+                    					<option>Mon, Abigail</option>
+                    					<option>Mon, Robee</option>
+                    					<option>Mon, Rosario</option>
+                    					<option>Moratillo, Richard P.</option>
+                    					<option>Nueva Espana, Rebecca</option>
+                    					<option>Olalia, Hanna Rizzi DR.</option>
+                    					<option>Oli, Christine</option>
+                    					<option>Oli, Harvy</option>
+                    					<option>Operario, Jennelyn</option>
+                    					<option>Orosvo, Hemie Rose</option>
+                    					<option>Orsua, Mary Ann B.</option>
+                    					<option>Padayhag, Alicia</option>
+                    					<option>Panaligan, Jeremy</option>
+                    					<option>Pascual, Dominga</option>
+                    					<option>Pascual, Edwin</option>
+                    					<option>Penuela, Ace York Caezar B.</option>
+                    					<option>Pico, Jayelle</option>
+                    					<option>Pile, Vanessa Joyce</option>
+                    					<option>Plazo, Karen</option>
+                    					<option>Reyes, Cris Jalyn</option>
+                    					<option>Rizalina Fuentes</option>
+                    					<option>Romero, Renzo</option>
+                    					<option>Roque, Adolf</option>
+                    					<option>Sabile, Mc</option>
+                    					<option>Sabino, Carmela</option>
+                    					<option>Sabong, Vincent</option>
+                    					<option>Sagum, Elwis</option>
+                    					<option>Sagum, Kamil</option>
+                    					<option>Salvador, Ernie</option>
+                    					<option>Salvador, Teresita C.</option>
+                    					<option>Santiago, Rose Ann</option>
+                    					<option>Sarcia, Mikaella M.</option>
+                    					<option>Sevillano, Danielle F.</option>
+                    					<option>Sevillano, Jeric J.</option>
+                    					<option>Tadlas, Louie Mar N. </option>
+                    					<option>Tadlas, Susana</option>
+                    					<option>Talag, John Miro</option>
+                    					<option>Tapia, Jobelle</option>
+                    					<option>Trasmonte, Mary Cris</option>
+                    					<option>Tubig, Aiza</option>
+                    					<option>Tubig, Narcisa</option>
+                    					<option>Tuyay,  Gilbert</option>
+                    					<option>Uy, Jasmine</option>
+                    					<option>Uy, Maia</option>
+                    					<option>Victoria, Marie Nella T.</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-6">
